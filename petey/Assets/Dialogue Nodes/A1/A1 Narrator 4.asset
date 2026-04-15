@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Narrator 4
   m_EditorClassIdentifier: 
+  dialogueType: 1
+  playerResponseNeeded: 0
+  dialogueSpeaker: 0
   _lines:
   - You hope to break the ice with them to hear more, so making a tea that will help
     them feel more comfortable and calm would be ideal.
   - You recall that black tea is energy boosting and green tea can help lower stress
     and anxiety.
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: ebc0d3ee212c2e24cb9a0b838003396e, type: 2}

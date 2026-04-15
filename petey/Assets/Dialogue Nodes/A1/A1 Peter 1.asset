@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Peter 1
   m_EditorClassIdentifier: 
+  dialogueType: 1
   playerResponseNeeded: 0
   dialogueSpeaker: 2
   _lines:

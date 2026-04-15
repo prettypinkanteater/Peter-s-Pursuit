@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Narrator 3
   m_EditorClassIdentifier: 
+  dialogueType: 1
+  playerResponseNeeded: 0
+  dialogueSpeaker: 0
   _lines:
   - The following awkward silence leads to your gesturing towards the tea tray behind
     you.
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: 4e8758dbba2ca2c468b28d684db19170, type: 2}
