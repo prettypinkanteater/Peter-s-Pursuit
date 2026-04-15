@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] public DialogueNodeSc _currentNode;
+    private DialogueNodeSc _currentNode;
+    [SerializeField] public DialogueNodeSc _startingNode;
     private int _currentLine = 0;
     private DialogueUI _dialogueUI;
 
@@ -12,6 +13,7 @@ public class DialogueController : MonoBehaviour
     void Start()
     {
         _dialogueUI = GameObject.Find("DialogueUI").GetComponent<DialogueUI>();
+        _currentNode = _startingNode;
         _dialogueUI.ShowDialogue(_currentNode._lines[_currentLine]);
     }
 

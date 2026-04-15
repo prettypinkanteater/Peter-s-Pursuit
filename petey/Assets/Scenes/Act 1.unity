@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b538a3709fb06944e96102b5f57fa5de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentNode: {fileID: 11400000, guid: 0dc7d57c28f456049ae23177b034eebc, type: 2}
+  _startingNode: {fileID: 11400000, guid: 0dc7d57c28f456049ae23177b034eebc, type: 2}
 --- !u!4 &360306872
 Transform:
   m_ObjectHideFlags: 0
@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8422e12458a798047bec7aa968ca5765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcTalking: 0
 --- !u!1 &1160414690
 GameObject:
   m_ObjectHideFlags: 0
