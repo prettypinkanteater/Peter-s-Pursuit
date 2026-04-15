@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Narrator 2
   m_EditorClassIdentifier: 
+  playerResponseNeeded: 0
+  dialogueSpeaker: 0
   _lines:
   - Intrigued by their explanation, you swivel in their direction.
   - The anteaters notice your sudden displayed interest and turn to look at you as
     you begin to introduce yourself into their conversation.
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: 0159a1701cd69344099969e23b69acd3, type: 2}

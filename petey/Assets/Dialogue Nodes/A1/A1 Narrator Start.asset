@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Narrator Start
   m_EditorClassIdentifier: 
+  playerResponseNeeded: 0
+  dialogueSpeaker: 0
   _lines:
   - "It's a languid afternoon, and the other members of the Afterschool Fun Club
     buzz about their student lives quietly while participating in the meeting\u2019s
@@ -20,4 +22,5 @@ MonoBehaviour:
   - 'As you lower your teacup, you catch the nearby exasperated sigh of another anteater
     in conversation with their friend. '
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: 793c5d098866b584aa197bd113e5778b, type: 2}

@@ -26,11 +26,11 @@ public class DialogueController : MonoBehaviour
             AdvanceDialogue();
         }
 
-        if (resetNode)
+        /*if (resetNode)
         {
-            _dialogueUI.ShowDialogue(_currentNode._lines[0]);
+            
             resetNode = false;
-        }
+        }*/
 
         _dialogueUI.npcNameUI.text = _currentNode.dialogueSpeaker.ToString();
     }
@@ -44,13 +44,13 @@ public class DialogueController : MonoBehaviour
         }
         else if (_currentLine == _currentNode._lines.Length)
         {
-            Debug.Log("switch node");
-            if (_currentNode.playerResponseNeeded == false)
-            {
-                _currentNode = _currentNode._npcReplies[0];
-                resetNode = true;
-            }
+            //Debug.Log("switch node");
             
+                _currentNode = _currentNode._npcReplies[0];
+                _dialogueUI.ShowDialogue(_currentNode._lines[0]);
+                _currentLine = 0;
+                //resetNode = true;
+            // 4/14: yo audrey you gotta do this shit ^^ fix the whole needing to press space twice when wanting to advance twin   
         }
         else if (_currentNode.playerResponseNeeded)
         {

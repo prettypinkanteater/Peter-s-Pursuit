@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Peter 1
   m_EditorClassIdentifier: 
+  playerResponseNeeded: 0
   dialogueSpeaker: 2
   _lines:
   - "\u201CHi guys, I\u2019m Peter, a board member of the club, I couldn\u2019t help
     but overhear and I was wondering what was going on.\u201D"
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: 6775e6f37e9079946bfa1bef6c2a0c1c, type: 2}

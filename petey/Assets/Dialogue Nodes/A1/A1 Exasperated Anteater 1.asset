@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Exasperated Anteater 1
   m_EditorClassIdentifier: 
+  playerResponseNeeded: 0
   dialogueSpeaker: 1
   _lines:
   - " *SIGH* \u201CI mean seriously, you\u2019d expect that with the money we\u2019re
     paying, we\u2019d be getting way better facilities around campus!\u201D"
   _playerReplyOptions: []
-  _npcReplies: []
+  _npcReplies:
+  - {fileID: 11400000, guid: de1168f14795028498c2b764ef9021f5, type: 2}
