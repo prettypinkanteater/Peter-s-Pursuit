@@ -8,6 +8,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] public DialogueNodeSc _startingNode;
     private int _currentLine = 0;
     private DialogueUI _dialogueUI;
+    private bool resetNode;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,14 @@ public class DialogueController : MonoBehaviour
         {
             AdvanceDialogue();
         }
+
+        if (resetNode)
+        {
+            _dialogueUI.ShowDialogue(_currentNode._lines[0]);
+            resetNode = false;
+        }
+
+        _dialogueUI.npcNameUI.text = _currentNode.dialogueSpeaker.ToString();
     }
 
     private void AdvanceDialogue()
@@ -32,6 +41,22 @@ public class DialogueController : MonoBehaviour
         {
             _dialogueUI.ShowDialogue(_currentNode._lines[_currentLine]);
             _currentLine++;
-        } 
+        }
+        else if (_currentLine == _currentNode._lines.Length)
+        {
+            Debug.Log("switch node");
+            if (_currentNode.playerResponseNeeded == false)
+            {
+                _currentNode = _currentNode._npcReplies[0];
+                resetNode = true;
+            }
+            
+        }
+        else if (_currentNode.playerResponseNeeded)
+        {
+            Debug.Log("response needed");
+        }
+            
+                
     }
 }

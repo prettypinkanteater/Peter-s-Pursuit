@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cb15ad7fba6334eae7b691dbad6514, type: 3}
   m_Name: A1 Exasperated Anteater 3
   m_EditorClassIdentifier: 
+  dialogueSpeaker: 1
   _lines:
   - '"Yes, please!"'
   _playerReplyOptions: []

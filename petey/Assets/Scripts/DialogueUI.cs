@@ -7,7 +7,7 @@ using UnityEngine;
 public class DialogueUI : MonoBehaviour
 {
     private TextMeshProUGUI dialogueText;
-    private TextMeshProUGUI npcNameUI;
+    public TextMeshProUGUI npcNameUI;
     // Start is called before the first frame update
     void Start()
     {
